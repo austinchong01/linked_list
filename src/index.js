@@ -11,4 +11,4 @@ list.prepend("snake");
 list.prepend("turtle");
 
 console.log(list.toString());
-console.log(list.contains("turtle"));
+console.log(list.find("hamster"));

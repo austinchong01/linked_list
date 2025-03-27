@@ -106,9 +106,19 @@ export default class LinkedList {
         return false;
     }
 
-    // find(value){
-    //     //return index of node, or null
-    // }
+    find(value){
+        //return index of node, or null
+        let node = this.head;
+        for(let i = 0; i < this.length; i+=1){
+            if(node.value === value){
+                return i
+            } else {
+                node = node.nextNode;
+            }
+        }
+        return null;
+
+    }
 
     toString(){
         let string = "";
