@@ -1,5 +1,5 @@
-import "./styles.css";
-import LinkedList from "./linked";
+// import "./styles.css";
+import LinkedList from "./linked.js";
 
 const list = new LinkedList();
 
@@ -7,7 +7,8 @@ list.append("dog");
 list.append("cat");
 list.append("parrot");
 list.append("hamster");
-list.append("snake");
-list.append("turtle");
+list.prepend("snake");
+list.prepend("turtle");
 
-list.toString();
+console.log(list.toString());
+console.log(list.contains("turtle"));
